@@ -32,4 +32,4 @@ def read_file(file_name):
     print(column_arrays)
     wb.close()
 
-read_file()
+read_file(file_name)
