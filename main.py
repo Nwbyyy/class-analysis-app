@@ -4,5 +4,6 @@ def main():
   print("Please enter the name of your excel sheet")
   file_name = input()
   read_file(file_name)
+  startGUI()
 
 main()
