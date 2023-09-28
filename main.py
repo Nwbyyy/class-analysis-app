@@ -1,3 +1,9 @@
+# testing.py>
+# source.py>
+# gui.py>
+
+
+
 def main():
   # call all the functions here 
   print("Make sure your data is in an excel sheet in the same directory as this file")
@@ -5,5 +11,6 @@ def main():
   file_name = input()
   read_file(file_name)
   startGUI()
+  graph()
 
 main()
