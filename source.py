@@ -31,3 +31,5 @@ def read_file(file_name):
     column_arrays = createarrays(ws, headers, num_columns)
     print(column_arrays)
     wb.close()
+
+read_file()
