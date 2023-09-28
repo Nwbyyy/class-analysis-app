@@ -1,12 +1,13 @@
 import numpy as np
 import pandas as pd
 import openpyxl
+from openpyxl import Workbook, load_workbook
+
 #import matplotlib.pyplot as plt
 #from sklearn.preprocessing import StandardScaler
 #from imblearn.over_sampling import RandomOverSampler
 
 #pip install xlrd
-
 
 def createarrays(worksheet, headers, num_columns):
         column_arrays = [[] for _ in range(num_columns)]
@@ -18,7 +19,7 @@ def createarrays(worksheet, headers, num_columns):
         return column_arrays
 
 def read_file(file_name):
-    wb = openpyxl.loadworkbook(file_name)
+    wb = openpyxl.load_workbook(file_name)
     ws = wb.active
 
     values = []
